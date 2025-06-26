@@ -41,15 +41,18 @@
 ## 🏛️ Padrões de Projeto
 
 ### 1. Padrão de Módulo
+
 - Utilização de classes ES6
 - Encapsulamento de funcionalidades
 - Separação de responsabilidades
 
 ### 2. Observer Pattern
+
 - Sistema de eventos para atualização da interface
 - Comunicação desacoplada entre componentes
 
 ### 3. Factory Pattern
+
 - Criação padronizada de elementos da interface
 - Reutilização de código
 
@@ -75,6 +78,7 @@
 ## 🎨 Padrões de Código
 
 ### JavaScript
+
 ```javascript
 // Padrão de nomenclatura
 const nomeDeVariavel = 'camelCase';
@@ -95,21 +99,22 @@ class Componente {
 ```
 
 ### CSS
+
 ```css
 /* Organização de propriedades */
 .componente {
   /* Posicionamento */
   position: relative;
-  
+
   /* Box model */
   display: flex;
   margin: 0;
   padding: 0;
-  
+
   /* Visual */
   background: #fff;
   border: 1px solid #ddd;
-  
+
   /* Tipografia */
   font-size: 16px;
   color: #333;
@@ -148,4 +153,4 @@ class Componente {
    - Single Responsibility
    - Open/Closed
    - Interface Segregation
-   - Dependency Inversion 
+   - Dependency Inversion

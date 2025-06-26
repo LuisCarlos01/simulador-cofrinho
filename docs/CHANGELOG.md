@@ -8,6 +8,7 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 ## [1.0.0] - 2024-01-20 - MVP 🎉
 
 ### ✨ Adicionado
+
 - Interface inicial do cofrinho
 - Funcionalidade de adicionar moedas e cédulas
 - Sistema de filtros (moedas/cédulas)
@@ -17,6 +18,7 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 - Documentação completa
 
 ### 🔧 Configurado
+
 - ESLint para qualidade de código
 - Prettier para formatação
 - Husky para git hooks
@@ -24,6 +26,7 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 - Arquivos de configuração base
 
 ### 📚 Documentação
+
 - README.md com instruções detalhadas
 - Guia de contribuição
 - Documentação de arquitetura
@@ -32,8 +35,9 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 ## [Não Publicado]
 
 ### 🚧 Em Desenvolvimento
+
 - Testes automatizados
 - CI/CD pipeline
 - Melhorias de performance
 - Novas animações
-- Temas personalizáveis 
+- Temas personalizáveis

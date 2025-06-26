@@ -1,60 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simulador de Cofrinho</title>
-  <link rel="stylesheet" href="../src/css/style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Simulador de Cofrinho</h1>
-    
-    <div class="cofrinho-container">
-      <div class="controles">
-        <div class="moedas-section">
-          <h2>Adicionar Moedas</h2>
-          <button data-valor="0.05" data-tipo="moeda">R$ 0,05</button>
-          <button data-valor="0.10" data-tipo="moeda">R$ 0,10</button>
-          <button data-valor="0.25" data-tipo="moeda">R$ 0,25</button>
-          <button data-valor="0.50" data-tipo="moeda">R$ 0,50</button>
-          <button data-valor="1.00" data-tipo="moeda">R$ 1,00</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Cofrinho</title>
+    <link rel="stylesheet" href="../src/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simulador de Cofrinho</h1>
+
+      <div class="cofrinho-container">
+        <div class="controles">
+          <div class="moedas-section">
+            <h2>Adicionar Moedas</h2>
+            <button data-valor="0.05" data-tipo="moeda">R$ 0,05</button>
+            <button data-valor="0.10" data-tipo="moeda">R$ 0,10</button>
+            <button data-valor="0.25" data-tipo="moeda">R$ 0,25</button>
+            <button data-valor="0.50" data-tipo="moeda">R$ 0,50</button>
+            <button data-valor="1.00" data-tipo="moeda">R$ 1,00</button>
+          </div>
+
+          <div class="cedulas-section">
+            <h2>Adicionar Cédulas</h2>
+            <button data-valor="2.00" data-tipo="cedula">R$ 2,00</button>
+            <button data-valor="5.00" data-tipo="cedula">R$ 5,00</button>
+            <button data-valor="10.00" data-tipo="cedula">R$ 10,00</button>
+            <button data-valor="20.00" data-tipo="cedula">R$ 20,00</button>
+            <button data-valor="50.00" data-tipo="cedula">R$ 50,00</button>
+            <button data-valor="100.00" data-tipo="cedula">R$ 100,00</button>
+          </div>
         </div>
 
-        <div class="cedulas-section">
-          <h2>Adicionar Cédulas</h2>
-          <button data-valor="2.00" data-tipo="cedula">R$ 2,00</button>
-          <button data-valor="5.00" data-tipo="cedula">R$ 5,00</button>
-          <button data-valor="10.00" data-tipo="cedula">R$ 10,00</button>
-          <button data-valor="20.00" data-tipo="cedula">R$ 20,00</button>
-          <button data-valor="50.00" data-tipo="cedula">R$ 50,00</button>
-          <button data-valor="100.00" data-tipo="cedula">R$ 100,00</button>
-        </div>
-      </div>
+        <div class="display">
+          <div class="total">
+            <h2>Total no Cofrinho</h2>
+            <p id="total-valor">R$ 0,00</p>
+          </div>
 
-      <div class="display">
-        <div class="total">
-          <h2>Total no Cofrinho</h2>
-          <p id="total-valor">R$ 0,00</p>
-        </div>
+          <div class="filtros">
+            <h3>Filtrar por:</h3>
+            <button data-filtro="todos" class="ativo">Todos</button>
+            <button data-filtro="moeda">Moedas</button>
+            <button data-filtro="cedula">Cédulas</button>
+          </div>
 
-        <div class="filtros">
-          <h3>Filtrar por:</h3>
-          <button data-filtro="todos" class="ativo">Todos</button>
-          <button data-filtro="moeda">Moedas</button>
-          <button data-filtro="cedula">Cédulas</button>
-        </div>
+          <div class="lista-valores">
+            <h3>Valores no Cofrinho</h3>
+            <ul id="lista-itens"></ul>
+          </div>
 
-        <div class="lista-valores">
-          <h3>Valores no Cofrinho</h3>
-          <ul id="lista-itens"></ul>
+          <button id="esvaziar" class="esvaziar">Esvaziar Cofrinho</button>
         </div>
-
-        <button id="esvaziar" class="esvaziar">Esvaziar Cofrinho</button>
       </div>
     </div>
-  </div>
 
-  <script src="../src/js/script.js"></script>
-</body>
-</html> 
+    <script src="../src/js/script.js"></script>
+  </body>
+</html>

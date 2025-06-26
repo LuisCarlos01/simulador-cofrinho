@@ -38,17 +38,20 @@ Um simulador de cofrinho virtual que permite adicionar e gerenciar moedas e céd
 ## 📦 Instalação
 
 1. Clone o repositório:
+
 ```bash
 git clone https://github.com/LuisCarlos01/simulador-cofrinho.git
 cd simulador-cofrinho
 ```
 
 2. Instale as dependências:
+
 ```bash
 npm install
 ```
 
 3. Execute o projeto:
+
 - Abra o arquivo `public/index.html` em seu navegador
 - Ou use um servidor local como o Live Server do VS Code
 
@@ -92,4 +95,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-⭐️ Se este projeto te ajudou, considere dar uma estrela! 
+⭐️ Se este projeto te ajudou, considere dar uma estrela!

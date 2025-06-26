@@ -99,6 +99,7 @@ Seguimos o padrão [Conventional Commits](https://www.conventionalcommits.org/):
 - `chore`: Manutenção
 
 Exemplo:
+
 ```bash
 git commit -m "feat: Adiciona novo botão de reset"
 git commit -m "fix: Corrige cálculo do total"
@@ -137,4 +138,4 @@ git commit -m "docs: Atualiza README"
 - [ ] Atualizou a documentação
 - [ ] Seguiu os padrões de código
 - [ ] Adicionou testes se necessário
-- [ ] Verificou o lint e formatação 
+- [ ] Verificou o lint e formatação

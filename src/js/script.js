@@ -13,7 +13,7 @@ class Cofrinho {
 
   configurarEventos() {
     // Eventos dos botões de valores
-    document.querySelectorAll('button[data-valor]').forEach(botao => {
+    document.querySelectorAll('button[data-valor]').forEach((botao) => {
       botao.addEventListener('click', () => {
         const valor = parseFloat(botao.dataset.valor);
         const tipo = botao.dataset.tipo;
@@ -22,7 +22,7 @@ class Cofrinho {
     });
 
     // Eventos dos botões de filtro
-    document.querySelectorAll('button[data-filtro]').forEach(botao => {
+    document.querySelectorAll('button[data-filtro]').forEach((botao) => {
       botao.addEventListener('click', () => {
         this.filtroAtual = botao.dataset.filtro;
         this.atualizarBotoesFiltro();
@@ -55,9 +55,13 @@ class Cofrinho {
 
   agruparValores() {
     const grupos = {};
-    this.valores.forEach(item => {
+    this.valores.forEach((item) => {
       const chave = `${item.valor}`;
-      grupos[chave] = grupos[chave] || { valor: item.valor, tipo: item.tipo, quantidade: 0 };
+      grupos[chave] = grupos[chave] || {
+        valor: item.valor,
+        tipo: item.tipo,
+        quantidade: 0,
+      };
       grupos[chave].quantidade++;
     });
     return Object.values(grupos);
@@ -70,7 +74,7 @@ class Cofrinho {
 
   atualizarTotal() {
     const total = this.calcularTotal();
-    document.getElementById('total-valor').textContent = 
+    document.getElementById('total-valor').textContent =
       `R$ ${total.toFixed(2).replace('.', ',')}`;
   }
 
@@ -81,10 +85,11 @@ class Cofrinho {
     const valoresFiltrados = this.filtrarValores();
     const valoresAgrupados = this.agruparValores(valoresFiltrados);
 
-    valoresAgrupados.forEach(grupo => {
+    valoresAgrupados.forEach((grupo) => {
       if (this.filtroAtual === 'todos' || this.filtroAtual === grupo.tipo) {
         const li = document.createElement('li');
-        li.textContent = `${grupo.quantidade}x R$ ${grupo.valor.toFixed(2).replace('.', ',')} ` +
+        li.textContent =
+          `${grupo.quantidade}x R$ ${grupo.valor.toFixed(2).replace('.', ',')} ` +
           `(${grupo.tipo === 'moeda' ? 'Moeda' : 'Cédula'})`;
         listaElement.appendChild(li);
       }
@@ -92,14 +97,17 @@ class Cofrinho {
   }
 
   atualizarBotoesFiltro() {
-    document.querySelectorAll('button[data-filtro]').forEach(botao => {
-      botao.classList.toggle('ativo', botao.dataset.filtro === this.filtroAtual);
+    document.querySelectorAll('button[data-filtro]').forEach((botao) => {
+      botao.classList.toggle(
+        'ativo',
+        botao.dataset.filtro === this.filtroAtual
+      );
     });
   }
 
   filtrarValores() {
     if (this.filtroAtual === 'todos') return this.valores;
-    return this.valores.filter(item => item.tipo === this.filtroAtual);
+    return this.valores.filter((item) => item.tipo === this.filtroAtual);
   }
 
   animarAdicao(tipo) {
@@ -129,4 +137,4 @@ class Cofrinho {
 // Inicializar o cofrinho quando o DOM estiver pronto
 document.addEventListener('DOMContentLoaded', () => {
   new Cofrinho();
-}); 
+});
