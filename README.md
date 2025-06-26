@@ -1,10 +1,19 @@
 # 💰 Simulador de Cofrinho
 
 ![Versão](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![Status](https://img.shields.io/badge/status-MVP-green.svg)
+![Status](https://img.shields.io/badge/status-MVP-success.svg)
 ![Licença](https://img.shields.io/badge/license-MIT-green.svg)
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
+![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
 Um simulador de cofrinho virtual que permite adicionar e gerenciar moedas e cédulas, com funcionalidades de filtragem e persistência de dados.
+
+[📚 Documentação Completa](docs/ARCHITECTURE.md) | [🤝 Como Contribuir](docs/CONTRIBUTING.md) | [📝 Changelog](docs/CHANGELOG.md)
 
 ## 🎯 Funcionalidades
 
@@ -30,7 +39,7 @@ Um simulador de cofrinho virtual que permite adicionar e gerenciar moedas e céd
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/simulador-cofrinho.git
+git clone https://github.com/LuisCarlos01/simulador-cofrinho.git
 cd simulador-cofrinho
 ```
 
@@ -56,6 +65,8 @@ npm install
 3. Commit suas mudanças (`git commit -m 'feat: Minha nova feature'`)
 4. Push para a branch (`git push origin feature/MinhaFeature`)
 5. Abra um Pull Request
+
+Para mais detalhes, consulte nosso [Guia de Contribuição](docs/CONTRIBUTING.md).
 
 ## 📝 Convenções de Commit
 
